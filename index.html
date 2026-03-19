@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Dashboard</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo"><span>F1</span> DASHBOARD</div>
+      <div class="season-bar" id="season-bar"></div>
+    </div>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <button class="tab-btn active" data-tab="calendar">📅 Calendrier</button>
+      <button class="tab-btn"        data-tab="drivers">🏆 Pilotes</button>
+      <button class="tab-btn"        data-tab="constructors">🏗️ Constructeurs</button>
+      <button class="tab-btn"        data-tab="results">🏁 Résultats</button>
+      <button class="tab-btn"        data-tab="qualifying">⏱️ Qualifications</button>
+      <button class="tab-btn"        data-tab="standings-chart">📈 Évolution</button>
+      <button class="tab-btn"        data-tab="track">🗺️ Circuits</button>
+    </div>
+  </nav>
+
+  <!-- ===== Main content ===== -->
+  <main class="content" id="content">
+    <div class="loading-box">INITIALISATION...</div>
+  </main>
+
+  <!-- ===== App (ES modules) ===== -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
